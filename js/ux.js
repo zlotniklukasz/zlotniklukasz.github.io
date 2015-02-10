@@ -25,7 +25,7 @@
         	availHeight = window.innerHeight;
         	introPage.style.height = availHeight + 'px'; 
        
-       		timerResizeEvent = setTimeout(function(){ // managing background color of main menu during scrolling
+       		timerResizeEvent = setTimeout(function(){
 				resizeEventTriggered = false; 
 				clearTimeout(timerResizeEvent);
 			}, 100);
