@@ -39,20 +39,14 @@
 			scrollEventTriggered = true;
 
 			if (document.documentElement.scrollTop > 100 || window.scrollY > 100) {
-				menu.style.background = 'rgba(255,255,255,.9)';
-				menu.style.color = 'rgb(113,158,217)';
-				menu.style.borderBottom = 'solid 2px rgb(113,158,217)';
-				menu.style.transition = 'all .8s ease-in';
-				// emailLogo.style.background = 'rgba(113,158,217,.2)';
-				// emailLogo.style.transition = 'all 1.2s ease-in';
+				menu.className = 'b-main-menu b-main-menu--opaque';
+				// TODO: emailLogo.style.background = 'rgba(113,158,217,.2)';
+				// TODO: emailLogo.style.transition = 'all 1.2s ease-in';
 			}
 			else {
-				menu.style.background = 'rgba(255,255,255,.4)';
-				menu.style.color = 'rgb(255,255,255)';
-				menu.style.borderBottom = 'none';
-				menu.style.transition = 'all .8s ease-in';
-				// emailLogo.style.background = 'rgba(255,255,255,.5)';
-				// emailLogo.style.transition = 'all 1.2s ease-in';
+				menu.className = 'b-main-menu';
+				// TODO: emailLogo.style.background = 'rgba(255,255,255,.5)';
+				// TODO: emailLogo.style.transition = 'all 1.2s ease-in';
 			}
 
 			scrollEventTriggered = false; 
@@ -82,10 +76,10 @@ $(document).ready(function(){
 $(document).ready(function() {
 	'use strict';
  	$(".b-itemContainer").mouseover(function() {
-    	$(this).find(".b-itemContainer__details").css("border", "solid 1px rgb(255, 255, 255)");
+    	$(this).find(".b-itemContainer__details").addClass('b-itemContainer__details--highlighted');
     });
     $(".b-itemContainer").mouseout(function() {
-        $(this).find(".b-itemContainer__details").css("border", "solid 1px rgba(113, 158, 217, .3)");
+        $(this).find(".b-itemContainer__details").removeClass('b-itemContainer__details--highlighted');
     });
 });
 /////////////////////////////////////////////////////////////////
