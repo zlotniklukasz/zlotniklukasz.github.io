@@ -173,7 +173,7 @@ body > header {
 	-webkit-box-shadow: 0 0 3px rgba(255,255,255,.8);
 	box-shadow: 0 0 3px rgba(255,255,255,.8);
 	bottom: 4em;
-	left: 50%; /* fallback */
+	left: 45%; /* fallback */
 	left: calc(50% - 5em);
 	position: absolute;
 }
