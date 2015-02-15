@@ -76,7 +76,7 @@ body > header {
 .b-main-menu--opaque {
 	background: rgba(255,255,255,.9);
 	color: rgb(113,158,217);
-	border-bottom: solid 2px rgb(113,158,217);
+	border-bottom: solid 1px rgb(113,158,217);
 	-moz-transition: all .8s ease-in;
 	-ms-transition: all .8s ease-in;
 	-o-transition: all .8s ease-in;
@@ -253,15 +253,15 @@ body > header {
 
 .b-itemContainer__details {
 	background: rgb(113,158,217); /* fallback */
-	background: rgba(113,158,217,.3);
+	background: rgba(113,158,217,.5);
 	border: solid 1px rgb(113,158,217); /* fallback */
 	border: solid 1px rgba(113,158,217,.3);
 	color: rgb(255,255,255);
 	float: left;
 	font-size: 1.2em;
 	height: 1.7em;
-	margin: 0 .1em;
-	padding-top: 2px;
+	line-height: 19px;
+	margin: 0 1px;
 	text-align: center;
 	text-decoration: none;
 	width: 4.5em;
